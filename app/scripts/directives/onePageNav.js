@@ -14,3 +14,29 @@ app.directive('activate', function (){
     }
   };
 });
+app.directive('activateLogo', function (){
+  return {
+    link: function(scope, element, attrs ) {
+      element.onePageNav({
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollOffset: 85,
+        filter: '',
+        easing: 'swing'
+      });
+    }
+  };
+});
+app.directive('activateMobile', function (){
+  return {
+    link: function(scope, element, attrs ) {
+      element.onePageNav({
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollOffset: 0,
+        filter: '',
+        easing: 'swing'
+      });
+    }
+  };
+});

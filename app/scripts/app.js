@@ -1,13 +1,13 @@
 'use strict';
 
-angular
-  .module('lvipApp', [
+var app = angular.module('lvipApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
     'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

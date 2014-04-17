@@ -260,7 +260,7 @@
 						<div class="row">
 
 							<!--SLIDE CAROUSEL START -->
-							<div class="slidewrap">
+							<div slider class="slidewrap">
 								<div class="slider">
 									<div class="slide">
 										<!--YOUR FIRST CAROUSEL CONTENT GOES HERE-->
@@ -1064,54 +1064,38 @@ onfocus="if(this.value=='Your message')this.value=''">Your message</textarea>
 	</div>
 </div>
 <!-- *** CONTACT END *** -->
+<script>
+// RESPONSIVE MENU
 
-<!-- *** TWEET FEED START *** -->
-<div id="tweet_feed">
-	<div class="container">
-		<div class="row">
-			<div class="span12">
-				<div id="twitterfeed"></div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- *** TWEET FEED END *** -->
+$(document).ready(function(){
+"use strict";
+var menu_trigger = $('.menu_trigger');
+var areamenu = $('.mobileAreaMenu');
+var all_li =$('.mobileAreaMenu li');
 
-<!-- *** FOOTER START *** -->
-<div id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="span3">
-				<h3>About us</h3>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut, ullam quis ipsa mollitia dolore tempora! Deleniti, aspernatur, aliquid, rerum, error molestiae ex voluptates.
-				<ul class="social_links_footer">
-					<li><a href="#"><i class="fa_icon icon-pinterest icon-2x"></i></a></li>
-					<li><a href="#"><i class="fa_icon icon-skype icon-2x"></i></a></li>
-					<li><a href="#"><i class="fa_icon icon-twitter icon-2x"></i></a></li>
-					<li><a href="#"><i class="fa_icon icon-dribbble icon-2x"></i></a></li>
+$(menu_trigger).click(function() {
 
 
+if ($(menu_trigger).hasClass('active')){
 
-				</ul>
-				<div class="clear"></div>
-				</div>
-				<div class="span3">
-				<h3>Support</h3>
-				<p>Address: Noorder 1021, Amsterdam, Germany</p>
-				<p>Telephone: 0292 1209</p>
-				<p>Fax: 9837 1839</p>
-				</div>
-				<div class="span3">
-				<h3>Latin America</h3>
-				<p>Address: Frontway 2587, Montevideo, Uruguay</p>
-				<p>Telephone: 0292 1209</p>
-				<p>Fax: 9837 1839</p>
-				</div>
-				<a class="map" href="https://maps.google.com/maps?q=Envato%20Pty%20Ltd,%20Elizabeth%20Street,%20Melbourne,%20Victoria,%20Australia" target="_blank" title="Map"><div id="map_google">
+			$(areamenu).slideUp(200,function(){
+				$(areamenu).css("display","");
+				$(menu_trigger).removeClass("active");
+			});
 
-				</div><div class="clear"></div></a>
+			} else {
+				$(areamenu).slideDown(200,function(){
+					//
+				});
 
-		</div>
-	</div>
-</div>
-<!-- *** FOOTER END *** -->
+				$(menu_trigger).addClass("active");
+			}
+});
+
+$('.mobileAreaMenu a').click(function(){
+
+	$(areamenu).slideUp(200);
+	$(menu_trigger).removeClass("active");
+});
+});
+</script>

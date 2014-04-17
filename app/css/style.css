@@ -105,7 +105,7 @@ blockquote p {
 .right {float: right;}
 .left {float: left;}
 
-.section{padding:115px 0px;background-color: #FFFFFF;}
+.section{padding:95px 0px;background-color: #FFFFFF;}
 .section.gray{background-color: #f6f6f6;}
 .hidden {display: none;}
 .uppercase {text-transform: uppercase;}
@@ -1612,7 +1612,7 @@ h1,h2,h3,h4,h5,h6 {line-height: 25px;}
 .welcome_msg {text-align: center;}
 .welcome {padding: 60px 0px;}
 .welcome_text {text-align: center;}
-.section {padding: 80px 0px;}
+.section {padding: 45px 0px;}
 .portfolio_item {width: 49.9%;}
 .img-container{height: 281px;}
 .loop {height: 280px;}

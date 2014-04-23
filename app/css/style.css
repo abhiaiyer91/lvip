@@ -39,14 +39,15 @@
 Available skins colors: orange.css blue.css red.css green.css yellow.css gray.css
 =================================================*/
 
-@import url("/css/skins/blue.css");
+@import url("/css/skins/red.css");
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 /*=================================================
 1 - BASE
 =================================================*/
 
 body {
-	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Pacifico', Helvetica, Arial, "Lucida Grande", sans-serif;
    	font-size:14px;
    	color: #818894;
    	line-height: 25px;
